@@ -1,0 +1,25 @@
+#choice-page {
+    background-image: url("bg8.png");
+}
+
+#or {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  padding: 13px 10px 7px 10px;
+  border-radius: 999px;
+  opacity: 0;
+  transition: opacity .3s;
+  width: 70px;
+  height: 70px;
+  margin: -26px auto;
+  background-color: black;
+  z-index: 999;
+  box-shadow: 7px 6px 21px 1px rgba(0,0,0,0.69);
+    -webkit-box-shadow: 7px 6px 21px 1px rgba(0,0,0,0.69);
+    -moz-box-shadow: 7px 6px 21px 1px rgba(0,0,0,0.69);
+}
+#or.shown {
+    opacity: 1;
+}
