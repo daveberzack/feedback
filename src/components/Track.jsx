@@ -14,7 +14,8 @@ function Track({track, isShown}) {
     }
   }, [isShown]);
 
-  const myClasses = "track"+ (isShown ? " shown" : "")+ (isWide ? " wide" : "");
+  const titleOnly = !track.artist || track.artist=="";
+  const myClasses = "track"+ (isShown ? " shown" : "")+ (isWide ? " wide" : "")+ (titleOnly ? " titleOnly" : "");
   return (
     <div className={myClasses}>
         <h3>{track.title}</h3>

@@ -25,6 +25,9 @@ div.track {
 .track.wide {
     width: 1000px;
 }
+.track.titleOnly h3 {
+    margin-top: 50px;
+}
 
 .track h3 {
     width: 1000px;

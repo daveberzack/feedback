@@ -1,0 +1,9 @@
+#blank-page {
+    background-color: white;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+#blank-page.shown {
+    opacity: 0;
+}
