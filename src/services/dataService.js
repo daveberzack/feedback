@@ -1,3 +1,15 @@
+
+export const getChoice = (trackId1, trackId2) => {
+    let track1 = {};
+    let track2 = {};
+    tracks.forEach(element => {
+        if (element.id==trackId1) track1 = element;
+        if (element.id==trackId2) track2 = element;
+    });
+    const output = [ track1, track2 ]
+    return output;
+}
+
 const tracks = [
     { id:1, title:"Beethoven's Fifth Gold Digger", artist:"Water Murphy x Kanye West"},
     { id:2, title:"Celeshake", artist:"Kool & the Gang x Yin Yang Twins"},  
@@ -1008,15 +1020,3 @@ const tracks = [
     { id:998, title:"", artist:""},  
     { id:999, title:"", artist:""},  
 ]
-
-
-export const getChoice = (trackId1, trackId2) => {
-    let track1 = {};
-    let track2 = {};
-    tracks.forEach(element => {
-        if (element.id==trackId1) track1 = element;
-        if (element.id==trackId2) track2 = element;
-    });
-    const output = [ track1, track2 ]
-    return output;
-}
